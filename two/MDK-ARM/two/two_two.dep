@@ -38,7 +38,7 @@ I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (../Core/Inc/usart.h)(0x69C8850F)
 I (../USB_DEVICE/App/usb_device.h)(0x69C8850F)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
 I (../Core/Inc/gpio.h)(0x69C8850E)
@@ -215,7 +215,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h)(0x69C4807C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x69C4807C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -228,7 +228,7 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid
 I (../USB_DEVICE/App/usbd_custom_hid_if.h)(0x69C8850F)
 F (../USB_DEVICE/App/usbd_desc.c)(0x69C8850F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_two-ID:\keil\keil_pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\keil_pack\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o two\usbd_desc.o --omf_browse two\usbd_desc.crf --depend two\usbd_desc.d)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -268,12 +268,12 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x69C4807C)
 I (../USB_DEVICE/App/usbd_desc.h)(0x69C8850F)
-F (../USB_DEVICE/App/usbd_custom_hid_if.c)(0x69C885DA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_two-ID:\keil\keil_pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\keil_pack\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o two\usbd_custom_hid_if.o --omf_browse two\usbd_custom_hid_if.crf --depend two\usbd_custom_hid_if.d)
+F (../USB_DEVICE/App/usbd_custom_hid_if.c)(0x69C895B9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_two-ID:\keil\keil_pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\keil_pack\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o two\usbd_custom_hid_if.o --omf_browse two\usbd_custom_hid_if.crf --depend two\usbd_custom_hid_if.d)
 I (../USB_DEVICE/App/usbd_custom_hid_if.h)(0x69C8850F)
 I (../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -344,7 +344,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h)(0x69C4807C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x69C4807C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -931,7 +931,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x69C4807C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h)(0x69C4807C)
 F (../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c)(0x69C4807C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_two-ID:\keil\keil_pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\keil_pack\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o two\usbd_core.o --omf_browse two\usbd_core.crf --depend two\usbd_core.d)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -973,7 +973,7 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x69C4807C
 F (../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c)(0x69C4807C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_two-ID:\keil\keil_pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\keil_pack\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o two\usbd_ctlreq.o --omf_browse two\usbd_ctlreq.crf --depend two\usbd_ctlreq.d)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -1014,7 +1014,7 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x69C4807C)
 F (../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c)(0x69C4807C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_two-ID:\keil\keil_pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\keil\keil_pack\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o two\usbd_ioreq.o --omf_browse two\usbd_ioreq.crf --depend two\usbd_ioreq.d)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -1056,7 +1056,7 @@ F (../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid
 I (../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x69C4807C)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x69C4807C)
-I (../USB_DEVICE/Target/usbd_conf.h)(0x69C885DA)
+I (../USB_DEVICE/Target/usbd_conf.h)(0x69C8964D)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5E53505C)

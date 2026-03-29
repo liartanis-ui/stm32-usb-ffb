@@ -22,7 +22,9 @@
 #include "usbd_custom_hid_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#include <stdio.h>
+#include <string.h>
+#include "usbd_customhid.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -130,6 +132,39 @@
 
 #define HID_DIRECTION_ENABLE 0x04
 #define FFB_EFFECT_DURATION_INFINITE 0xffff
+
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
+
+static void dump_hex(const uint8_t *buf, uint16_t len)
+{
+    printf("FFB RX len=%u : ", len);
+    for (uint16_t i = 0; i < len; i++)
+    {
+        printf("%02X ", buf[i]);
+    }
+    printf("\r\n");
+}
+
+static const char* report_name(uint8_t id)
+{
+    switch (id)
+    {
+        case 0x01: return "SET_EFFECT";
+        case 0x03: return "SET_CONDITION";
+        case 0x04: return "SET_PERIODIC";
+        case 0x05: return "SET_CONSTANT";
+        case 0x06: return "SET_RAMP";
+        case 0x0A: return "EFFECT_OPERATION";
+        case 0x0B: return "BLOCK_FREE";
+        case 0x0C: return "DEVICE_CONTROL";
+        case 0x0D: return "DEVICE_GAIN";
+        case 0x11: return "CREATE_NEW_EFFECT";
+        default:   return "UNKNOWN";
+    }
+}
+
 /* USER CODE END PRIVATE_TYPES */
 
 /**
@@ -967,16 +1002,32 @@ static int8_t CUSTOM_HID_DeInit_FS(void)
 static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state)
 {
   /* USER CODE BEGIN 6 */
-  UNUSED(event_idx);
+ UNUSED(event_idx);
   UNUSED(state);
 
-  /* Start next USB packet transfer once data processing is completed */
-  if (USBD_CUSTOM_HID_ReceivePacket(&hUsbDeviceFS) != (uint8_t)USBD_OK)
+  USBD_CUSTOM_HID_HandleTypeDef *hhid =
+      (USBD_CUSTOM_HID_HandleTypeDef*)hUsbDeviceFS.pClassData;
+
+  if (hhid == NULL)
   {
-    return -1;
+    printf("hhid == NULL\r\n");
+    return (int8_t)USBD_FAIL;
   }
 
-  return (USBD_OK);
+  uint8_t *buf = hhid->Report_buf;
+  uint16_t len = USBD_CUSTOMHID_OUTREPORT_BUF_SIZE;
+
+  printf("\r\n==== USB OUT ====\r\n");
+  printf("event_idx=%u state=%u\r\n", event_idx, state);
+  printf("report_id=0x%02X (%s)\r\n", buf[0], report_name(buf[0]));
+  dump_hex(buf, len);
+
+  if (USBD_CUSTOM_HID_ReceivePacket(&hUsbDeviceFS) != (uint8_t)USBD_OK)
+  {
+    return (int8_t)USBD_FAIL;
+  }
+
+  return (int8_t)USBD_OK;
   /* USER CODE END 6 */
 }
 

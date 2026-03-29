@@ -32,11 +32,11 @@ two\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 two\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
 two\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 two\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+two\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
 two\main.o: ../Core/Inc/usart.h
 two\main.o: ../USB_DEVICE/App/usb_device.h
 two\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
 two\main.o: ../USB_DEVICE/Target/usbd_conf.h
-two\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
 two\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
 two\main.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
 two\main.o: ../Core/Inc/gpio.h

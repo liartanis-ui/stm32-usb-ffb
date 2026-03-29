@@ -31,7 +31,7 @@
 "two\usbd_ctlreq.o"
 "two\usbd_ioreq.o"
 "two\usbd_customhid.o"
---strict --scatter "two\two.sct"
+--library_type=microlib --strict --scatter "two\two.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "two.map" -o two\two.axf

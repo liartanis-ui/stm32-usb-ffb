@@ -181,5 +181,12 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 
 /* USER CODE BEGIN 1 */
+int fputc(int ch, FILE *f)
+{
+	/* 发送一个字节数据到串口DEBUG_USART */
 
+	HAL_UART_Transmit(&huart4, (uint8_t *)&ch, 1, 100);	
+	//if(pr==2)HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 100);		
+	return (ch);
+}
 /* USER CODE END 1 */
